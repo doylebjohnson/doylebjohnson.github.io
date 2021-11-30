@@ -28,7 +28,9 @@
         <section>
             <img src="images/STCUNMDell.jpg" alt="Cover page of STC UNM v. Dell patent complaint." width="320" height="419"><br>
 
+            <h2>Click Button to Highlight Cases</h2>
             <button id="juryButton" value="Jury">Highlight Jury Trials</button><button id="plaintiffButton" value="Plaintiff">Highlight Plaintiff Cases</button><button id="softwareButton" value="Software">Highlight Software Cases</button>
+            <button id="clearButton" value="Clear">Clear All Selections</button>
 
             <h1>Sample Litigation Matters:</h1>
             <ul>
@@ -103,13 +105,13 @@
         let softwareButton = document.getElementById("softwareButton");
         softwareButton.addEventListener("click", highlightSoftware, false);
 
+        let clearButton = document.getElementById("clearButton");
+        clearButton.addEventListener("click", clearSelections, false);
+
         function highlightJury() {
             let listElements = document.getElementsByTagName("li");
-            for (var i=0; i < listElements.length; i++) {
-                listElements[i].style.color = "";
-                listElements[i].style.listStyleType = "";
-                listElements[i].style.textDecoration = "";
-            }
+            clearSelections();
+
             let entries = document.getElementsByClassName("jury");
             for (var i=0; i < entries.length; i++) {
                 entries[i].style.color = "red";
@@ -119,12 +121,8 @@
         }
 
         function highlightPlaintiff() {
-            let listElements = document.getElementsByTagName("li");
-            for (var i=0; i < listElements.length; i++) {
-                listElements[i].style.color = "";
-                listElements[i].style.listStyleType = "";
-                listElements[i].style.textDecoration = "";
-            }
+            clearSelections();
+
            let entries = document.getElementsByClassName("plaintiff");
            for (var i=0; i < entries.length; i++) {
                 entries[i].style.color = "blue";
@@ -134,17 +132,22 @@
         }
 
         function highlightSoftware() {
-            let listElements = document.getElementsByTagName("li");
-            for (var i=0; i < listElements.length; i++) {
-                listElements[i].style.color = "";
-                listElements[i].style.listStyleType = "";
-                listElements[i].style.textDecoration = "";
-            }
+            clearSelections();
+
            let entries = document.getElementsByClassName("software");
            for (var i=0; i < entries.length; i++) {
                 entries[i].style.color = "green";
                 entries[i].style.listStyleType = "circle";
                 entries[i].style.textDecoration = "underline";
+            }
+        }
+
+        function clearSelections() {
+            let listElements = document.getElementsByTagName("li");
+            for (var i=0; i < listElements.length; i++) {
+                listElements[i].style.color = "";
+                listElements[i].style.listStyleType = "";
+                listElements[i].style.textDecoration = "";
             }
         }
     </script>

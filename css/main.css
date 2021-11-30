@@ -103,6 +103,7 @@ bottom of page to top navigation */
     background-color: rgb(255, 0, 0);
     border-color: rgb(0, 0, 0);
     margin-right: 20px;
+    min-height: 40px;
   }
 
   #plaintiffButton {
@@ -110,10 +111,17 @@ bottom of page to top navigation */
       border-color: rgb(0, 0, 0);
       color: rgb(255, 255, 255);
       margin-right: 20px;
+      min-height: 40px;
   }
 
   #softwareButton {
       background-color: rgb(0, 255, 0);
       border-color: rgb(0, 0, 0);
       margin-right: 20px;
+      min-height: 40px;
+  }
+
+  #clearButton {
+      margin-right: 20px;
+      min-height: 40px;
   }
