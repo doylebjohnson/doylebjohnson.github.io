@@ -99,6 +99,14 @@ bottom of page to top navigation */
     }
   }
 
+  .buttonStyle {
+    background-color:rgb(0, 0, 255);
+    border-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    margin-right: 20px;
+    min-height: 40px;
+  }
+
   #juryButton {
     background-color: rgb(255, 0, 0);
     border-color: rgb(0, 0, 0);
@@ -107,21 +115,32 @@ bottom of page to top navigation */
   }
 
   #plaintiffButton {
-      background-color:rgb(0, 0, 255);
-      border-color: rgb(0, 0, 0);
-      color: rgb(255, 255, 255);
-      margin-right: 20px;
-      min-height: 40px;
+    background-color:rgb(0, 0, 255);
+    border-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    margin-right: 20px;
+    min-height: 40px;
   }
 
   #softwareButton {
-      background-color: rgb(0, 255, 0);
-      border-color: rgb(0, 0, 0);
-      margin-right: 20px;
-      min-height: 40px;
+    background-color: rgb(0, 255, 0);
+    border-color: rgb(0, 0, 0);
+    margin-right: 20px;
+    min-height: 40px;
   }
 
   #clearButton {
-      margin-right: 20px;
-      min-height: 40px;
+    margin-right: 20px;
+    min-height: 40px;
+  }
+
+  img.patent {
+    display: block; 
+    height:600px; 
+    width:420px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    position: fixed; 
+    top:0px; 
+    right:0px
   }

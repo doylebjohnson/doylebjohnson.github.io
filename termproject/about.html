@@ -28,25 +28,25 @@
         
         <section>
             <h2>ABOUT ME</h2>
-            <p>I am originally from the San Francisco Bay Area and have lived here most of my life. After graduating from University of California, Berkeley, I worked
+            <p id="p1">I am originally from the San Francisco Bay Area and have lived here most of my life. After graduating from University of California, Berkeley, I worked
             as a Computer Systems Engineer in Silicon Valley for four years before going to law school. I have always enjoyed the intersection of both technology and law.I 
             now live in Moraga, CA, which is a small suburb east of San Francisco.  I enjoy Moraga as it is nestled in the hills, with many hiking trails and <strong>wildlife</strong> to enjoy. 
-            <br><input type="submit" id="wildlife" value="Wildlife in Moraga"></p>
+            <br><input class="buttonStyle" type="submit" id="wildlife" value="Wildlife in Moraga"></p>
 
             <aside id="wildlifeImages">
             </aside>
 
-            <p>I am a registered Patent Attorney with an Electrical Engineering background and have over 25 years of experience litigating complex patent cases. 
+            <p id="p2">I am a registered Patent Attorney with an Electrical Engineering background and have over 25 years of experience litigating complex patent cases. 
             I also have many years of experience prosecuting patent applications involving complex technologies before the U.S. Patent and Trademark Office. 
             In addition, I have represented clients in IPR proceedings.  I handle trademark prosecution matters, domain name disputes and licensing agreements. 
             I counsel clients concerning intellectual property rights both in the US and internationally.</p>
 
-            <p>My areas of technical expertise include computer hardware and software, communications technologies, and analog and digital circuits. 
+            <p id="p3">My areas of technical expertise include computer hardware and software, communications technologies, and analog and digital circuits. 
             I have been involved in patent matters involving virtually every facet of electronics – from circuit design, wired and wireless communications, 
             semiconductor manufacturing technologies, and consumer electronic devices. With a background in Amateur Radio, and an FCC General Radiotelephone license, 
             I have many years of experience with radio (“wireless”) technologies, including cellular, Wi-Fi, and Bluetooth. In addition, I have a certificate in 
             Java programming, and have written and prosecuted Java patent applications for Sun Microsystems.
-            <br><input type="submit" id="office" value="Show My San Francisco Office"></p>
+            <br><input class="buttonStyle" type="submit" id="office" value="Show My San Francisco Office"></p>
 
             <aside id="officeImage">
             </aside>
@@ -97,17 +97,44 @@
                 <figure><img src=\"images/deer.jpg\" alt=\"Photo of a doe and fawn im my backyard eating bushes.\" width=\"532\" height=\"299\"> \
                 <figcaption>A doe and fawn broke through my fence and ate my bushes</figcaption></figure>"
 
-            let removeWildButton = document.getElementById("wildlife");
-            removeWildButton.remove();
+            let wildButton = document.getElementById("wildlife");
+            wildButton.remove();
+
+            document.getElementById("p1").innerHTML += "<input class='buttonStyle' type='submit' id='removeWildPhotos' value='Remove Wildlife Photos'>";
+            let removeWildButton = document.getElementById("removeWildPhotos");
+            removeWildButton.onclick = removeWildlife;
         }
 
         function showOffice() {
             document.getElementById("officeImage").innerHTML += "<figure><img src=\"images/Office.jpg\" alt=\"Photo of my office.\" width=\"523\" height=\"295\"> \
                     <figcaption>My office</figcaption></figure>"
 
-        let removeOfficeButton = document.getElementById("office");
-        removeOfficeButton.remove();
+            let officeRemoval = document.getElementById("office");
+            officeRemoval.remove();
+            
+            document.getElementById("p3").innerHTML += "<input class='buttonStyle' type='submit' id='removeOfficePhoto' value='Remove Office Photo'>";
+            let removeOfficeButton = document.getElementById("removeOfficePhoto");
+            removeOfficeButton.onclick = removeOffice;
         }
+
+        function removeWildlife() {
+            document.getElementById("wildlifeImages").innerHTML = "";
+            document.getElementById("p1").innerHTML += "<input class='buttonStyle' type='submit' id='wildlife' value='Wildlife in Moraga'>";
+            let wildlifeButton = document.getElementById("wildlife");
+            wildlifeButton.onclick = showWildlife;
+            let removalButton = document.getElementById("removeWildPhotos");
+            removalButton.remove();
+        }
+
+        function removeOffice() {
+            document.getElementById("officeImage").innerHTML = "";
+            document.getElementById("p3").innerHTML += "<input class='buttonStyle' type='submit' id='office' value='Show My San Francisco Office'>"
+            let officeButton = document.getElementById("office");
+            officeButton.onclick = showOffice;
+            let removalButton = document.getElementById("removeOfficePhoto");
+            removalButton.remove();
+        }
+
     </script>
 
 </body>
