@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doyle B. Johnson | Education</title>
     <link rel="shortcut icon" href="images/favicon.ico" >
-    <link href="CSS/main.css" type="text/css" rel="stylesheet" />
+    <link href="css/main.css" type="text/css" rel="stylesheet" />
 </head>
 
 <body>
@@ -28,10 +28,17 @@
         
         <section>
             <h2>EDUCATION</h2>
+            <div>
+            <h3>Music Can Play If You Hover Over any Image or Logo</h3>
+            <input type="submit" id="allowMusic" value="Click to Allow Music" onclick="playAll()"><input type="submit" id="muteMusic" value="Click to Mute Music" onclick="muteAll()">
+            </div>
             <figure>
-                <img src="images/Campanile.jpg" alt="Photo of UC Berkeley clock tower" width="830" height="623">
+                <img id="campanile" src="images/Campanile.jpg" alt="Photo of UC Berkeley clock tower" width="830" height="623">
                 <figcaption>Photo of UC Berkeley's Campanile clock tower</figcaption>
             </figure>
+            <audio id="campanileAudio" visibility="hidden" loop>
+                <source src="audioFiles/campanile.mp3">
+            </audio>
 
             <!--Table of Universities and Degrees-->
             <h3>University Degrees</h3>
@@ -45,27 +52,42 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><a href="https://engineering.berkeley.edu/academics/undergraduate-programs/electrical-engineering-computer-sciences/"><img src="images/Berkeley.jpg" alt="UC Berkeley logo" width="100" height="100"></a>University of California, Berkeley</td>
+                        <td><a href="https://engineering.berkeley.edu/academics/undergraduate-programs/electrical-engineering-computer-sciences/"><img id="cal" src="images/Berkeley.jpg" alt="UC Berkeley logo" width="100" height="100"></a>University of California, Berkeley
+                            <audio id="calAudio" visibility="hidden" loop>
+                                <source src="audioFiles/cal.mp3">
+                            </audio></td>
                         <td>Bachelor of Science</td>
                         <td>Electrical Engineering and Computer Science</td>
                     </tr>
                     <tr>
-                        <td><a href="https://law.pepperdine.edu"><img src="images/Pepperdine.jpg" alt="Pepperdine University logo" width="100" height="100"></a>Pepperdine University, Caruso School of Law</td>
+                        <td><a href="https://law.pepperdine.edu"><img id="pepperdine" src="images/Pepperdine.jpg" alt="Pepperdine University logo" width="100" height="100"></a>Pepperdine University, Caruso School of Law
+                            <audio id="pepperdineAudio" visibility="hidden" loop>
+                                <source src="audioFiles/pepperdine.mp3">
+                            </audio></td>
                         <td>Juris Doctorate</td>
                         <td>Law</td>
                     </tr>
                     <tr>
-                        <td><a href="https://kelley.iu.edu/programs/online/mba/index.html?redirect=/programs/online/degrees/mba/index"><img src="images/Indiana.jpg" alt="Indiana University logo" width="100" height="100"></a>Indiana University, Kelley School of Business</td>
+                        <td><a href="https://kelley.iu.edu/programs/online/mba/index.html?redirect=/programs/online/degrees/mba/index"><img id="indiana" src="images/Indiana.jpg" alt="Indiana University logo" width="100" height="100"></a>Indiana University, Kelley School of Business
+                            <audio id="indianaAudio" visibility="hidden" loop>
+                                <source src="audioFiles/indiana.mp3">
+                            </audio></td>
                         <td>MBA</td>
                         <td>Business Managment</td>
                     </tr>
                     <tr>
-                        <td><a href="https://online.uc.edu/masters-programs/meng-electrical-engineering/"><img src="images/Cincinnati.jpg" alt="University of Cincinnati logo" width="100" height="100"></a>University of Cincinnati</td>
+                        <td><a href="https://online.uc.edu/masters-programs/meng-electrical-engineering/"><img id="cincinnati" src="images/Cincinnati.jpg" alt="University of Cincinnati logo" width="100" height="100"></a>University of Cincinnati
+                            <audio id="cincinnatiAudio" visibility="hidden" loop>
+                                <source src="audioFiles/cincinnati.mp3">
+                            </audio></td>
                         <td>Master of Engineering</td>
                         <td>Electrical Engineering</td>
                     </tr>
                     <tr>
-                        <td><a href="https://www.bu.edu/online/programs/graduate-programs/software-development/"><img src="images/BostonU.jpg" alt="Boston University logo" width="100" height="100"></a>Boston University</td>
+                        <td><a href="https://www.bu.edu/online/programs/graduate-programs/software-development/"><img id="bu" src="images/BostonU.jpg" alt="Boston University logo" width="100" height="100"></a>Boston University
+                            <audio id="buAudio" visibility="hidden" loop>
+                                <source src="audioFiles/bu.mp3">
+                            </audio></td>
                         <td>Master of Science</td>
                         <td>Software Development (expected May, 2022)</td>
                     </tr>
@@ -90,6 +112,97 @@
             <p><a href="mailto:sfpatentattorney@gmail.com">sfpatentattorney@gmail.com</a></p>
         </address>   
     </footer>
+
+    <script>
+        let initSound = false;
+        window.onload = function () {
+            muteAll();
+        }   
+
+        function playAudio(target) {
+            let audio = document.getElementById(target);
+            audio.play();
+        }
+              
+        function pauseAudio(target) {
+            let audio = document.getElementById(target);
+            audio.pause();
+        }
+
+        function muteAll() {
+            document.getElementById("campanileAudio").muted = true;
+            document.getElementById("calAudio").muted = true;
+            document.getElementById("pepperdineAudio").muted = true;
+            document.getElementById("indianaAudio").muted = true;
+            document.getElementById("cincinnatiAudio").muted = true;
+            document.getElementById("buAudio").muted = true;
+        }
+
+        function playAll() {
+            document.getElementById("campanileAudio").muted = false;
+            document.getElementById("calAudio").muted = false;
+            document.getElementById("pepperdineAudio").muted = false;
+            document.getElementById("indianaAudio").muted = false;
+            document.getElementById("cincinnatiAudio").muted = false;
+            document.getElementById("buAudio").muted = false;
+
+            if(!initSound) {
+
+                let campanile = document.getElementById("campanile");
+                campanile.addEventListener("mouseover", function() {
+                    playAudio("campanileAudio");
+                }, false);
+                campanile.addEventListener("mouseout", function() {
+                    pauseAudio("campanileAudio");
+                }, false);
+
+                let cal = document.getElementById("cal");
+                cal.addEventListener("mouseover", function() {
+                    playAudio("calAudio");
+                }, false);
+                cal.addEventListener("mouseout", function() {
+                    pauseAudio("calAudio");
+                }, false);
+
+                let pepperdine = document.getElementById("pepperdine");
+                pepperdine.addEventListener("mouseover", function() {
+                    playAudio("pepperdineAudio");
+                }, false);
+                pepperdine.addEventListener("mouseout", function() {
+                    pauseAudio("pepperdineAudio");
+                }, false);
+
+                let indiana = document.getElementById("indiana");
+                indiana.addEventListener("mouseover", function() {
+                    playAudio("indianaAudio");
+                }, false);
+                indiana.addEventListener("mouseout", function() {
+                    pauseAudio("indianaAudio");
+                }, false);
+
+                let cincinnati = document.getElementById("cincinnati");
+                cincinnati.addEventListener("mouseover", function() {
+                    playAudio("cincinnatiAudio");
+                }, false);
+                cincinnati.addEventListener("mouseout", function() {
+                    pauseAudio("cincinnatiAudio");
+                }, false);
+
+                let bu = document.getElementById("bu");
+                bu.addEventListener("mouseover", function() {
+                    playAudio("buAudio");
+                }, false);
+                bu.addEventListener("mouseout", function() {
+                    pauseAudio("buAudio");
+                }, false);
+
+                initSound = true;
+        
+            }
+
+        }
+
+    </script>
 
 </body>
 
