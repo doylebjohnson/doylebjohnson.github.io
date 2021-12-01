@@ -52,4 +52,5 @@ function previousImage() {
 function loadContent() {
     document.getElementById("photo").src = "images/photoArray/"+photoArray[counter];
     document.getElementById("caption").textContent = captionArray[counter];
+    document.getElementById("photo").alt = captionArray[counter];
 }
