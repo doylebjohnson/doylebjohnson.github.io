@@ -60,6 +60,12 @@ video {
     height: auto;
 }
 
+iframe {
+    object-fit: contain;
+    width: 100%;
+    height: 1000px;
+}
+
 footer {
     border-style:solid;
     border-color: black;
