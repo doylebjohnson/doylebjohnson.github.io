@@ -5,6 +5,10 @@ header {
     font-size: 1.5em;
 }
 
+body {
+    background-color: rgb(172, 217, 231);
+}
+
 main {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -87,25 +91,7 @@ table img {
     padding: 10px;
 }
 
-/* For narrow screen: change background color, 
-reduce font, remove footer, and add link at 
-bottom of page to top navigation */
-@media only screen and (max-width: 600px) {
-    body {
-      background-color: rgb(172, 217, 231);
-      font-size:small;
-    }
-
-    footer {
-        display: none;
-    }
-
-    .narrowscreen {
-        display: contents;
-    }
-  }
-
-  .buttonStyle {
+.buttonStyle {
     background-color:rgb(0, 0, 255);
     border-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
@@ -150,3 +136,22 @@ bottom of page to top navigation */
     top:0px; 
     right:0px
   }
+
+/* For narrow screen: change background color, 
+reduce font, remove footer, and add link at 
+bottom of page to top navigation */
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: transparent;
+      font-size:small;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .narrowscreen {
+        display: contents;
+    }
+  }
+
