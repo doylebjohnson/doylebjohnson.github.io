@@ -1,13 +1,13 @@
-document.getElementById("button").onclick = getDegrees("src/degrees.json");
-
 async function getDegrees(url) {
+    // fetch the url
     await fetch(url)
-    .then((response) => response.json())
-    .then((data) =>
-        makeTable(data)
-    );
-}
-
-function makeTable(data) {
-    document.write(data.my_degrees[0].major);
-}
+      //get your data here, and check for the response status. If it's not 200, throw an error
+      .then((response) => response.json())
+      .then((data) =>
+        document.write(
+          `My first degree was a ${data.my_degrees[0].type}`
+        )
+      );
+  }
+  
+  getDegrees("./src/degrees.json");
