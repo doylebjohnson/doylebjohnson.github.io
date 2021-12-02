@@ -21,7 +21,7 @@ function makeTable(data) {
     for(let i=0; i < count-1; i++) {
         let school = data.mydegrees[i].degree.school;
         let major = data.mydegrees[i].degree.major;
-        let type = data.mydegrees[i]].degree.type;
+        let type = data.mydegrees[i].degree.type;
         let year = data.mydegrees[i].degree.year;
         tableData += '\
                 <tr>\
