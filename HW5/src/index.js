@@ -8,7 +8,7 @@ async function getDegrees(url) {
     await fetch(url)
     .then((response) => {
         if (response.status===200) {
-            response.json();
+            return response.json();
     } else {
         document.write("System error. Please reload and try again.");
     }
