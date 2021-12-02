@@ -30,8 +30,8 @@ function makeTable(data) {
 
     tableData +='</tbody></table>';
 
-    document.getElementById("button").remove();
-    document.getElementById("clickTitle").remove();
+    //document.getElementById("button").remove();
+    //document.getElementById("clickTitle").remove();
     document.getElementById("degreeTable").innerHTML(tableData);
 
 }
