@@ -1,0 +1,44 @@
+{
+    "my_degrees": [
+        {
+            "degree": {
+                "school": "University of California, Berkeley",
+                "major": "Electrical Engineering and Computer Science",
+                "type": "Bachelor of Science",
+                "year": "1988"
+            }
+        },
+        {
+            "degree": {
+                "school": "Pepperdine University School of Law",
+                "major": "Law",
+                "type": "Juris Doctor",
+                "year": "1995"
+            }
+        },
+        {
+            "degree": {
+                "school": "Indiana University, Kelley School of Business",
+                "major": "Business Administration",
+                "type": "Master of Business Administration",
+                "year": "2018"
+            }
+        },
+        {
+            "degree": {
+                "school": "University of Cincinnati",
+                "major": "Electrical Engineering",
+                "type": "Master of Engineering",
+                "year": "2020"
+            }
+        },
+        {
+            "degree": {
+                "school": "Boston University",
+                "major": "Software Development",
+                "type": "Master of Science",
+                "year": "2022"
+            }
+        }
+    ]
+}
