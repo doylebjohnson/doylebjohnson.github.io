@@ -6,19 +6,15 @@ document.getElementById("button").onclick = function () {
 // fetch data from url 
 async function getDegrees(url) {
     await fetch(url)
-    .then(getJson(response))
-    .then(makeTable(data)
-    );
-  }
-
-// check server status return code
-function getJson(response) {
-    if (response.status === 200) {
-        return response.json();
+    .then((response) => {
+        if (response.status===200) {
+            response.json();
     } else {
         document.write("System error. Please reload and try again.");
     }
-}
+    })
+    .then((data) => makeTable(data));
+}    
 
 // process returned JSON data into a table for display
 function makeTable(data) {
