@@ -1,3 +1,5 @@
+document.getElementById("button").onclick = getDegrees("src/degrees.json");
+
 async function getDegrees(url) {
     // fetch the url
     await fetch(url)
@@ -9,5 +11,3 @@ async function getDegrees(url) {
         )
       );
   }
-  
-  getDegrees("./src/degrees.json");
