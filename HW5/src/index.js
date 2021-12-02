@@ -1,20 +1,31 @@
+// on button click, launch fetch 
 document.getElementById("button").onclick = function () {
     getDegrees("src/degrees.json");
 }
 
+// fetch data from url 
 async function getDegrees(url) {
     await fetch(url)
-      //get your data here, and check for the response status. If it's not 200, throw an error
-      .then((response) => response.json())
-      .then((data) =>
-         makeTable(data)
-      );
+    .then(getJson(response))
+    .then(makeTable(data)
+    );
   }
 
-function makeTable(data) {
-    var count = Object.keys(data.my_degrees).length;
-    console.log(count);
+// check server status return code
+function getJson(response) {
+    if (response.status === 200) {
+        return response.json();
+    } else {
+        document.write("System error. Please reload and try again.");
+    }
+}
 
+// process returned JSON data into a table for display
+function makeTable(data) {
+    // get the number of degrees from JSON file
+    var count = Object.keys(data.my_degrees).length;
+
+    // build html table; loop through each degree and extract data
     let tableData = '<table><thead><tr><th scope="col">University</th><th scope="col">Degree</th><th scope="col">Major</th><th scope="col">Year</th></tr></thead><tbody>';
 
     for(let i=0; i < count; i++) {
@@ -33,9 +44,8 @@ function makeTable(data) {
 
     tableData +='</tbody></table>';
 
+    // update html page with new table 
     document.getElementById("button").remove();
     document.getElementById("clickTitle").innerHTML = "University Degrees";
     document.getElementById("degreeTable").innerHTML = tableData;
-    //document.write(tableData);
-
 }
