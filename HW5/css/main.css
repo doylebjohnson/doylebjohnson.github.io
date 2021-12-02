@@ -10,3 +10,11 @@ button {
     text-align: center;
     margin: auto;
 }
+
+table, td, th {
+    font-weight:bold;
+    color:rgb(0, 0, 255) ;
+    border-style: solid;
+    border-collapse: collapse;
+    padding: 10px;
+}
