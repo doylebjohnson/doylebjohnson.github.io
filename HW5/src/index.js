@@ -13,6 +13,6 @@ async function getDegrees(url) {
 
   function makeTable(data) {
     document.write(`My first degree was a ${data.my_degrees[0].degree.type}`)
-    var count = Object.keys(data).length;
+    var count = Object.keys(data.my_degrees).length;
     console.log(count);
   }
