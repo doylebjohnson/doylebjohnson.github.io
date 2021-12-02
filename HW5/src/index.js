@@ -12,7 +12,6 @@ async function getDegrees(url) {
   }
 
 function makeTable(data) {
-    document.write(`My first degree was a ${data.my_degrees[0].degree.type}`)
     var count = Object.keys(data.my_degrees).length;
     console.log(count);
 
@@ -34,9 +33,9 @@ function makeTable(data) {
 
     tableData +='</tbody></table>';
 
-    //document.getElementById("button").remove();
-    //document.getElementById("clickTitle").remove();
-    //document.getElementById("degreeTable").innerHTML(tableData);
-    document.write(tableData);
+    document.getElementById("button").remove();
+    document.getElementById("clickTitle").remove();
+    document.getElementById("degreeTable").innerHTML(tableData);
+    //document.write(tableData);
 
 }
