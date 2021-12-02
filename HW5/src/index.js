@@ -23,7 +23,7 @@ function makeTable(data) {
     var count = Object.keys(data.my_degrees).length;
 
     // build html table; loop through each degree and extract data
-    let tableData = '<table><thead><tr><th scope="col">University</th><th scope="col>Major</th><th scope="col">Degree</th><th scope="col">Year</th></tr></thead><tbody>';
+    let tableData = '<table><thead><tr><th scope="col">University</th><th scope="col">Major</th><th scope="col">Degree</th><th scope="col">Year</th></tr></thead><tbody>';
 
     for(let i=0; i < count; i++) {
         let school = data.my_degrees[i].degree.school;
