@@ -7,7 +7,7 @@ window.onload = function() {
         );
     }
     
-    getDegrees("./src/degrees.json");
+    getDegrees("src/degrees.json");
 
 }
 
