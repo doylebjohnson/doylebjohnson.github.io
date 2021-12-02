@@ -32,6 +32,7 @@ function makeTable(data) {
 
     //document.getElementById("button").remove();
     //document.getElementById("clickTitle").remove();
-    document.getElementById("degreeTable").innerHTML(tableData);
+    //document.getElementById("degreeTable").innerHTML(tableData);
+    document.write(tableData);
 
 }
