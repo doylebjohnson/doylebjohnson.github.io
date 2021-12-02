@@ -11,6 +11,7 @@ async function getDegrees(url) {
             return response.json();
     } else {
         document.write("System error. Please reload and try again.");
+        return;
     }
     })
     .then((data) => makeTable(data));
