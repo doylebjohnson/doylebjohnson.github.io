@@ -1,4 +1,6 @@
-document.getElementById("button").onclick = getDegrees("src/degrees.json");
+document.getElementById("button").onclick = function () {
+    getDegrees("src/degrees.json");
+}
 
 async function getDegrees(url) {
     // fetch the url
