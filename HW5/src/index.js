@@ -19,12 +19,16 @@ function makeTable(data) {
     let tableData = '<table><thead><tr><th scope="col">University</th><th scope="col">Degree</th><th scope="col">Major</th><th scope="col">Year</th></tr></thead><tbody>';
 
     for(let i=0; i < count-1; i++) {
+        let school = data.mydegrees[i].degree.school;
+        let major = data.mydegrees[i].degree.major;
+        let type = data.mydegrees[i]].degree.type;
+        let year = data.mydegrees[i].degree.year;
         tableData += '\
                 <tr>\
-                    <td>${data.my_degrees[i].degree.school}</td>\
-                    <td>${data.my_degrees[i].degree.major}</td>\
-                    <td>${data.my_degrees[i].degree.type}</td>\
-                    <td>${data.my_degrees[i].degree.year}</td>\
+                    <td>' + school + '</td>\
+                    <td>' + major + '</td>\
+                    <td>' + type + '</td>\
+                    <td>' + year + '</td>\
                 </tr>'
     }
 
