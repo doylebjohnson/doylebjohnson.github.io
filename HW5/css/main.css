@@ -21,10 +21,17 @@ button {
 }
 
 table {
-    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+    font-weight:bold;
+    color:rgb(0, 0, 255) ;
+    border-style: solid;
+    border-collapse: collapse;
+    padding: 10px;
 }
 
-table, td, th {
+td, th {
     font-weight:bold;
     color:rgb(0, 0, 255) ;
     border-style: solid;
