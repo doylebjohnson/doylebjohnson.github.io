@@ -1,3 +1,12 @@
+body {
+    background-color: rgb(172, 217, 231);
+}
+
+h1 {
+    color:rgb(0, 0, 255);
+    text-align: center;
+}
+
 button {
     background-color: blue;
     border: solid;

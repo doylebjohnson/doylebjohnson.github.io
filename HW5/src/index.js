@@ -34,7 +34,7 @@ function makeTable(data) {
     tableData +='</tbody></table>';
 
     document.getElementById("button").remove();
-    document.getElementById("clickTitle").remove();
+    document.getElementById("clickTitle").innerHTML = "University Degrees";
     document.getElementById("degreeTable").innerHTML = tableData;
     //document.write(tableData);
 
