@@ -30,7 +30,7 @@ function makeTable(data) {
         let major = data.my_degrees[i].degree.major;
         let type = data.my_degrees[i].degree.type;
         let year = data.my_degrees[i].degree.year;
-        tableData += '<tr><td>' + school + '</td><td>' + major + '</td><td>' + type + '</td><td>' + year + '</td></tr>'
+        tableData += '<tr><td>' + school + '</td><td>' + major + '</td><td>' + type + '</td><td>' + year + '</td></tr>';
     }
 
     tableData +='</tbody></table>';
