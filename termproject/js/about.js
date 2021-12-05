@@ -62,10 +62,9 @@ function makeTable(data) {
     let tableData = '<table><thead><tr><th scope="col">Firm</th><th scope="col">Position</th><th scope="col">Location</th><th scope="col">Years</th></tr></thead><tbody>';
 
     for(let i=0; i < count; i++) {
-        let name = data.my_firms[i].firm.name;
-        let position = data.my_firms[i].firm.position;
-        let location = data.my_firms[i].firm.location;
-        let years = data.my_firms[i].firm.years;
+        // use es6 destructuring to read object variables
+        let {name, position, location, years}  = data.my_firms[i].firm;
+ 
         tableData += '<tr><td>' + name + '</td><td>' + position + '</td><td>' + location + '</td><td>' + years + '</td></tr>';
     }
 

@@ -13,6 +13,8 @@ Solution description:
 - When the submit button is clicked, javascript async/await/fetch function "getDegrees" is executed
 - If the server status is valid, response.json() is returned, and the data is processed 
 - makeTable() function processes the JSON data into a formatted table, which is inserted into the html page
+  - The "for loop" uses es6 "destructuring"to read the object variables in one line
+
 - CSS sets colors and formatting 
 
 To run:
