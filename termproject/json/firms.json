@@ -1,0 +1,36 @@
+{
+    "my_firms": [
+        {
+            "firm": {
+                "name": "Christie, Parker & Hale",
+                "position": "Summer Associate",
+                "location": "Pasadena, CA",
+                "years": "1994"
+            }
+        },
+        {
+            "firm": {
+                "name": "Price, Gess & Ubell",
+                "position": "Associate",
+                "location": "Irvine, CA",
+                "years": "1995-1999"
+            }
+        },
+        {
+            "firm": {
+                "name": "Beyer & Weaver",
+                "position": "Associate",
+                "location": "Berkeley, CA",
+                "years": "1999"
+            }
+        },
+        {
+            "firm": {
+                "name": "Reed Smith LLP",
+                "position": "Partner",
+                "location": "San Francisco, CA",
+                "years": "2000-2021"
+            }
+        }
+    ]
+}
