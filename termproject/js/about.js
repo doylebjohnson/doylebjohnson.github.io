@@ -72,6 +72,6 @@ function makeTable(data) {
 
     // update html page with new table 
     document.getElementById("firmButton").style.display = "none";
-    document.getElementById("firmsTitle").innerHTML = "Law Firm Experience";
+    document.getElementById("firmTitle").innerHTML = "Law Firm Experience";
     document.getElementById("firmTable").innerHTML = tableData;
 }
