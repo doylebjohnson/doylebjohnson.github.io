@@ -19,6 +19,12 @@ window.onload = function() {
         hideImages("officeImage", "showOffice", "hideOffice");
     }, false);
 
+    let showFirmsButton = document.getElementById("showFirms");
+    showFirmsButton.addEventListener("click", function() {
+        showFirms("json/firms.json"); }, false);
+    
+    let hideFirmsButton = document.getElementById("hideFirms");
+    hideFirmsButton.addEventListener("click", hideFirms, false);
 }
 
 function showImages(targetImage, showButton, hideButton) {
@@ -35,11 +41,11 @@ function hideImages(targetImage, showButton, hideButton) {
 
 // on button click, launch fetch 
 document.getElementById("firmButton").onclick = function () {
-    getFirms("json/firms.json");
+    showFirms("json/firms.json");
 }
 
 // fetch data from url 
-async function getFirms(url) {
+async function showFirms(url) {
     await fetch(url)
     .then((response) => {
         if (response.status===200) {
@@ -71,7 +77,15 @@ function makeTable(data) {
     tableData +='</tbody></table>';
 
     // update html page with new table 
-    document.getElementById("firmButton").style.display = "none";
+    document.getElementById("showFirms").style.display = "none";
+    document.getElementById("hideFirms").style.display = "block";
     document.getElementById("firmTitle").innerHTML = "Law Firm Experience";
     document.getElementById("firmTable").innerHTML = tableData;
+}
+
+function hideFirms() {
+    document.getElementById("showFirms").style.display = "block";
+    document.getElementById("hideFirms").style.display = "none";
+    document.getElementById("firmTitle").innerHTML = "";
+    document.getElementById("firmTable").innerHTML = "";
 }
