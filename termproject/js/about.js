@@ -39,11 +39,6 @@ function hideImages(targetImage, showButton, hideButton) {
     document.getElementById(hideButton).style.display="none";
 }
 
-// on button click, launch fetch 
-document.getElementById("firmButton").onclick = function () {
-    showFirms("json/firms.json");
-}
-
 // fetch data from url 
 async function showFirms(url) {
     await fetch(url)
