@@ -64,7 +64,7 @@ function makeTable(data) {
     for(let i=0; i < count; i++) {
         // use es6 destructuring to read object variables
         let {name, position, location, years}  = data.my_firms[i].firm;
-        
+
         // use es6 template strings
         tableData += `<tr><td> ${name} </td><td> ${position} </td><td> ${location} </td><td> ${years} </td></tr>`;
     }
