@@ -35,7 +35,7 @@ main p:first-letter {
 }
 
 .hobbyLink {
-    border-color: rgb(0, 0, 0);
+    background-color: yellow;
 }
 
 /* Style links */
