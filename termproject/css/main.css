@@ -36,6 +36,7 @@ main p:first-letter {
 
 .hobbyLink {
     background-color: yellow;
+    border-color: black;
 }
 
 /* Style links */
