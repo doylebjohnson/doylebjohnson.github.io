@@ -34,6 +34,10 @@ main p:first-letter {
      font-family:cursive;
 }
 
+.hobbyLink {
+    border-color: rgb(0, 0, 0);
+}
+
 /* Style links */
 a:link {
     color: rgb(0, 0, 255);
@@ -135,10 +139,6 @@ table img {
     position: fixed; 
     top:0px; 
     right:0px
-  }
-
-  .hobbyLink {
-      border-color: rgb(0, 0, 0);
   }
 
 /* For narrow screen: change background color, 
