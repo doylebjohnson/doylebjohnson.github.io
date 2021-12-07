@@ -49,13 +49,9 @@ To run:
 ## (Final Project Description)
 
 - Added one additional page with travel photo slide show, for a total of eight pages
-
 - Added javascript to every page
-
 - Added Vue to hobbies.html/hobbies.js pages
-
 - Changed default background to blue, and change to white for narrow screens
-
 - Specific javascript additions:
 
   - index - resize and change image using mouseover
@@ -73,20 +69,17 @@ To run:
   - photos - travel photo slide show, with next and previous buttons
 
   - hobbies - Vue page; uses Vue to create slide show for each hobby by clicking on the photos
-
 - Key additions: 
 
   - Audio on hover
   - fetch/JSON
   - Vue
-
 - ES6 additions:
 
   - let/const
   - String templates
   - Destructuring (about.html file to make the data table)
   - async/await (ECMAScript 2017)
-
 - Final counts:
 
   - Files:
@@ -101,3 +94,9 @@ To run:
   - External links: 26
   - Lists: 4
   - Tables: 2
+- Validation:
+  - CSS validates with no errors
+  - JSON validates with no errors
+  - HTML - Vue syntax issues noted, but no others
+  - Javascript - JSLint only warns on Vue syntax and methods not used 
+  - Site tested with Firefox, Chrome and Edge but NOT Safari
