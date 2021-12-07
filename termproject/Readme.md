@@ -2,7 +2,9 @@
 
 # Doyle B. Johnson
 
-## Homework 1 (Week 1)
+# Term Project
+
+## (Week 1 Description)
 
 Description of assignment:
 
@@ -21,7 +23,7 @@ To run:
 
 
 
-## Homework 2 (Week 2)
+## (Week 2 Description)
 
 Week two updates and additions:
 
@@ -41,3 +43,61 @@ Week two updates and additions:
 To run:
 
 ​	Launch index.html from any browser
+
+
+
+## (Final Project Description)
+
+- Added one additional page with travel photo slide show, for a total of eight pages
+
+- Added javascript to every page
+
+- Added Vue to hobbies.html/hobbies.js pages
+
+- Changed default background to blue, and change to white for narrow screens
+
+- Specific javascript additions:
+
+  - index - resize and change image using mouseover
+
+  - about - show/hide buttons for photos; added "Law Firm Experience" that uses fetch to get law firm JSON data from JSON file
+
+  - education - buttons to play or mute music on mouseover events for the photo and university logos; university logos are also links to specific program websites
+
+  - patents - hovering over each link shows a cover sheet for each patent; clicking on link goes to patent on Google patent site
+
+  - cases - three buttons highlight the list with different colors, and button can clear decoration
+
+  - projects - embedded video, and pdf project presentation; buttons change between "show" and "hide" for each project
+
+  - photos - travel photo slide show, with next and previous buttons
+
+  - hobbies - Vue page; uses Vue to create slide show for each hobby by clicking on the photos
+
+- Key additions: 
+
+  - Audio on hover
+  - fetch/JSON
+  - Vue
+
+- ES6 additions:
+
+  - let/const
+  - String templates
+  - Destructuring (about.html file to make the data table)
+  - async/await (ECMAScript 2017)
+
+- Final counts:
+
+  - Files:
+    - html: 8
+    - javascript: 8
+    - css: 1
+    - images: 73
+    - audio files: 6
+    - pdfs: 3
+    - videos: 1
+    - json: 1
+  - External links: 26
+  - Lists: 4
+  - Tables: 2
