@@ -20,11 +20,11 @@ var app = new Vue({
       changeImage: function(image, gallery, caption, captionArray, counter) {
         if (this[counter] < gallery.length-1) {
           this[counter]++;
-          this[image] = `images/${gallery[this[counter]]}.jpg`;
+          this[image] = `images/hobbyImages/${gallery[this[counter]]}.jpg`;
           this[caption] = captionArray[this[counter]];
         } else {
           this[counter] = 0;
-          this[image] = `images/${gallery[this[counter]]}.jpg`;
+          this[image] = `images/hobbyImages/${gallery[this[counter]]}.jpg`;
           this[caption] = captionArray[this[counter]];
         }
       },
