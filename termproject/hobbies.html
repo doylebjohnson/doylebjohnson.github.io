@@ -50,6 +50,11 @@
                 </figure>
 
             <h2>Hiking with my Dog</h2>
+
+            <figure>
+                <img v-on:mouseover="changeImage('dogImage', dogGallery, 'dogCaption', dogCaptionArray, 'dogCounter')" :src="dogImage" alt="Dog photos" />
+                <figcaption>{{dogCaption}}</figcaption>
+            </figure>
             <figure>
                 <img src="images/dog.jpg" alt="Photo of me with my dog Thor." width="500" height="375">
                 <figcaption>Photo of me with my dog Thor</figcaption>
