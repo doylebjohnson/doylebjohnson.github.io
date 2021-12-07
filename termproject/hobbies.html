@@ -34,7 +34,7 @@
             <h2>College Football</h2>
 
             <figure>
-                <img v-on:mouseover="changeImage('footballImage', footballGallery, 'footballCaption', footballCaptionArray, 'footballCounter')" :src="footballImage" alt="Football photos" />
+                <img v-on:click="changeImage('footballImage', footballGallery, 'footballCaption', footballCaptionArray, 'footballCounter')" :src="footballImage" alt="Football photos" />
                 <figcaption>{{footballCaption}}</figcaption>
             </figure>
 
@@ -52,7 +52,7 @@
             <h2>Hiking with my Dog</h2>
 
             <figure>
-                <img v-on:mouseover="changeImage('dogsImage', dogsGallery, 'dogsCaption', dogsCaptionArray, 'dogsCounter')" :src="dogsImage" alt="Dog photos" />
+                <img v-on:click="changeImage('dogsImage', dogsGallery, 'dogsCaption', dogsCaptionArray, 'dogsCounter')" :src="dogsImage" alt="Dog photos" />
                 <figcaption>{{dogsCaption}}</figcaption>
             </figure>
             <figure>
