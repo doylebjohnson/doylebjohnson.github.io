@@ -4,7 +4,7 @@ var app = new Vue({
   
       footballImage: "images/hobbyImages/football/football0.jpg",
       footballGallery: ["football/football0", "football/football1", "football/football2", "football/football3", "football/football4", "football/football5", "football/football6", "football/football7"],
-      footballCaption: "Cal at Michigan State, Sep 14, 2002",
+      footballCaption: "Cal at Michigan State (46-22), Sep 14, 2002",
       footballCaptionArray: ["Cal at Michigan State (46-22), Sep 14, 2002", "Cal at Tennessee (18-35), Sep 2, 2006", "Cal home game", "Cal home game", "Cal home game", "Cal at Texas (45-44), Sep 19, 2015", "Cal at North Carolina (35-30), Sep 2, 2017", "Cal at Ole Miss (28-20), Sep 21, 2019 "],
       footballCounter: 0,
       dogsImage: "images/hobbyImages/dogs/dog0.jpg",

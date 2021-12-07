@@ -137,6 +137,10 @@ table img {
     right:0px
   }
 
+  .hobbyLink {
+      border-color: rgb(0, 0, 0);
+  }
+
 /* For narrow screen: change background color, 
 reduce font, remove footer, and add link at 
 bottom of page to top navigation */
