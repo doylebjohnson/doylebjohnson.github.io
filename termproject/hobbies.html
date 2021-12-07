@@ -61,12 +61,22 @@
             </figure>
 
             <h2>Working on Cars</h2>
+
+            <figure>
+                <img v-on:click="changeImage('carsImage', carsGallery, 'carsCaption', carsCaptionArray, 'carsCounter')" :src="carsImage" alt="Car photos" />
+                <figcaption>{{carsCaption}}</figcaption>
+            </figure>
             <figure>
                 <img src="images/car.jpg" alt="Photo of jacked up automobile." width="532" height="299">
                 <figcaption>Photo of Ford automobile that I repaired</figcaption>
             </figure>
 
             <h2>Building Hardware Projects</h2>
+
+            <figure>
+                <img v-on:click="changeImage('projectsImage', projectsGallery, 'projectsCaption', projectsCaptionArray, 'projectsCounter')" :src="projectsImage" alt="Project photos" />
+                <figcaption>{{projectsCaption}}</figcaption>
+            </figure>
             <a href="https://digilent.com/shop/basys-3-artix-7-fpga-trainer-board-recommended-for-introductory-users/">Digilent Basys 3 Board</a>
             <figure>
                 <img src="images/MicrocontrollerProject.jpg" alt="Photo of a microcontroller hardware project." width="532" height="299">
@@ -74,6 +84,11 @@
             </figure>
 
             <h2>Amateur ("Ham") Radio</h2>
+
+            <figure>
+                <img v-on:click="changeImage('hamRadioImage', hamRadioGallery, 'hamRadioCaption', hamRadioCaptionArray, 'hamRadioCounter')" :src="hamRadioImage" alt="Ham radio photos" />
+                <figcaption>{{hamRadioCaption}}</figcaption>
+            </figure>
             <a href="https://www.arrl.org">ARRL organization link</a>
             <figure>
                 <img src="images/Antenna.jpg" alt="Photo of a ham radio antenna." width="538" height="717">
