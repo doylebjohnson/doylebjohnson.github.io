@@ -3,12 +3,12 @@ var app = new Vue({
     data: {
   
       footballImage: "images/hobbyImages/football/football0.jpg",
-      footballGallery: ["football0", "football1", "football2", "football3", "football4", "football5", "football6", "football7", "football8", "football9"],
+      footballGallery: ["football/football0", "football/football1", "football/football2", "football/football3", "football/football4", "football/football5", "football/football6", "football/football7", "football/football8", "football/football9"],
       footballCaption: "Cal at Michigan State",
       footballCaptionArray: ["Cal at Michigan State", "football1", "football2", "football3", "football4", "football5", "football6", "football7", "football8", "football9"],
       footballCounter: 0,
       dogsImage: "images/hobbyImages/dogs/dog0.jpg",
-      dogsGallery: ["dog0", "dog1", "dog2", "dog3", "dog4"],
+      dogsGallery: ["dogs/dog0", "dogs/dog1", "dogs/dog2", "dogs/dog3", "dogs/dog4"],
       dogsCaption: "Bootsie",
       dogsCaptionArray: ["Bootise", "Rascal I", "Lady", "Rascal II", "Thor"],
       dogsCounter: 0,
