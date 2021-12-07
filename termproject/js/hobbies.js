@@ -12,7 +12,7 @@ var app = new Vue({
       dogsCaption: "Bootsie",
       dogsCaptionArray: ["Bootise", "Rascal I", "Lady", "Rascal II", "Thor"],
       dogsCounter: 0,
-      carsImage: "images/hobbyImages/cars/cars0.jpg",
+      carsImage: "images/hobbyImages/cars/car0.jpg",
       carsGallery: ["cars/car0", "cars/car1", "cars/car2", "cars/car3","cars/car4","cars/car5", "cars/car6", "cars/car7", "cars/car8"],
       carsCaption: "Working on a Car",
       carsCaptionArray: ["Working on a Car", "AMC Matador", "Fiat 128", "Oldsmobile Starfire", "Pontiac Fiero", "Geo Storm", "Black Ford Explorer", "BMW 325i", "Blue Ford Explorer"],
