@@ -72,6 +72,7 @@ To run:
 - Key additions: 
 
   - Audio on hover
+  - Captions all update with image changes
   - fetch/JSON
   - Vue
 - ES6 additions:
