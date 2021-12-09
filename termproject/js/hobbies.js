@@ -31,6 +31,8 @@ var app = new Vue({
   
     methods: {
   
+      // Single function is used to change images for all galleries; trick is to receive
+      // arguments of image, gallery,etc. for each gallery type (football, dogs, cars, etc.)
       changeImage: function(image, gallery, caption, captionArray, counter) {
         if (this[counter] < gallery.length-1) {
           this[counter]++;
