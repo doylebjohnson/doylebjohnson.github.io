@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doyle B. Johnson | Now and Then</title>
+    <link rel="shortcut icon" href="images/favicon.ico" >
+    <link href="css/main.css" type="text/css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <header>
+            <!--Navigation-->
+            <nav id="nav">
+                <a href="./index.html">Home</a> |
+                <a href="./about.html">About Me</a> |
+                <a href="./education.html">Education</a> |
+                <a href="./patents.html">Sample Patents</a> |
+                <a href="./cases.html">Sample Patent Cases</a> |
+                <a href="./projects.html">Sample Projects</a> |
+                <a href="./photos.html">Travel Photos</a> |
+                <b>Now and Then</b> |
+                <a href="./hobbies.html">Hobbies</a>
+            </nav>
+        </header>
+        <main>
+        <div id="app">
+             
+            <h1>Now and Then</h1>
+
+            <figure>
+                <img v-on:mouseover="changeImage()" :src="meImage" alt="Photos through time" width="480" height="600"/>
+                <figcaption>{{meCaption}}</figcaption>
+            </figure>
+
+            <figure>
+                <img v-on:mouseover="updateImage('then', 'dog')" v-on:mouseout="updateImage('now', 'dog')" :src="dog" alt="Photo of me with my dog Thor" width="375" height="500"/>
+                <figcaption>{{captionDog}}</figcaption>
+            </figure>
+            <figure>
+                <img v-on:mouseover="updateImage('then', 'birthday')" v-on:mouseout="updateImage('now', 'birthday')" :src="birthday" alt="Photo of me on a recent birthday" width="375" height="377"/>
+                <figcaption>{{captionBirthday}}</figcaption>
+            </figure>
+            <figure>
+                <img v-on:mouseover="updateImage('then', 'me')" v-on:mouseout="updateImage('now', 'me')" :src="me" alt="Professional headshot" width="640" height="480" />
+                <figcaption>{{captionMe}}</figcaption>
+            </figure>
+            <figure>
+                <img v-on:mouseover="updateImage('then', 'car')" v-on:mouseout="updateImage('now', 'car')" :src="car" alt="Photo of me with my BMW 325i" width="700" height="500"/>
+                <figcaption>{{captionCar}}</figcaption>
+            </figure>
+
+        </div>
+
+        </main>
+
+         <!--Email contact information-->
+        <footer>
+        <address>
+            <p>Author: Doyle B. Johnson</p>
+            <p><a href="mailto:sfpatentattorney@gmail.com">sfpatentattorney@gmail.com</a></p>
+        </address>   
+        </footer>
+
+        
+        <!--Include Vue-->
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <script src="js/nowthen.js"></script>
+        
+    
+    </body>
+
+</html>
