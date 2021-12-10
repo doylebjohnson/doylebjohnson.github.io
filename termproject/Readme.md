@@ -99,5 +99,5 @@ To run:
   - CSS validates with no errors
   - JSON validates with no errors
   - HTML - Vue syntax issues noted, but no others
-  - Javascript - JSLint only warns on Vue syntax and methods not used 
+  - Javascript - JSLint only warns on Vue syntax
   - Site tested with Firefox, Chrome and Edge but NOT Safari
