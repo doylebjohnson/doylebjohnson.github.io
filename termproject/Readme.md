@@ -87,7 +87,7 @@ To run:
     - html: 8
     - javascript: 8
     - css: 1
-    - images: 73
+    - images: 74
     - audio files: 6
     - pdfs: 3
     - videos: 1
