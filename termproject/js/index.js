@@ -1,11 +1,22 @@
-function enlargeImg(target) {
-    target.style.height = "418px";
-    target.style.width = "372px"
+window.onload = function() {
+
+    let headshot = document.getElementById("headshot");
+    headshot.addEventListener("mouseover", enlargeImg, false);
+    headshot.addEventListener("mouseout", standardImg, false);
+
+    let alcatraz = document.getElementById("alcatraz");
+    alcatraz.addEventListener("mouseover", newImg, false);
+    alcatraz.addEventListener("mouseout", originalImg, false);
 }
 
-function standardImg(target) {
-    target.style.height = "209px";
-    target.style.width = "186px";
+function enlargeImg() {
+    let large = document.getElementById("headshot");
+    large.src = "images/DoyleBJohnson.jpg";
+}
+
+function standardImg() {
+    let standard = document.getElementById("headshot");
+    standard.src = "images/DoyleBJohnson0.jpg";
 }
 
 function newImg() {
