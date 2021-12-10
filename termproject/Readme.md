@@ -48,26 +48,20 @@ To run:
 
 ## (Final Project Description)
 
-- Added one additional page with travel photo slide show, for a total of eight pages
+- Added two additional pages with travel photo slide show, and a "Now and Then" gallery for a total of nine pages
 - Added javascript to every page
-- Added Vue to hobbies.html/hobbies.js pages
+- Added Vue to hobbies.html/hobbies.js, nowthen.html/nowthen.js pages
 - Changed default background to blue, and change to white for narrow screens
 - Specific javascript additions:
 
   - index - resize and change image using mouseover
-
   - about - show/hide buttons for photos; added "Law Firm Experience" that uses fetch to get law firm JSON data from JSON file
-
   - education - buttons to play or mute music on mouseover events for the photo and university logos; university logos are also links to specific program websites
-
   - patents - hovering over each link shows a cover sheet for each patent; clicking on link goes to patent on Google patent site
-
   - cases - three buttons highlight the list with different colors, and button can clear decoration
-
   - projects - embedded video, and pdf project presentation; buttons change between "show" and "hide" for each project
-
   - photos - travel photo slide show, with next and previous buttons
-
+  - nowthen - Vue page; uses Vue to change images on moueover and mouseout events
   - hobbies - Vue page; uses Vue to create slide show for each hobby by clicking on the photos
 - Key additions: 
 
@@ -87,7 +81,7 @@ To run:
     - html: 8
     - javascript: 8
     - css: 1
-    - images: 74
+    - images: 86
     - audio files: 6
     - pdfs: 3
     - videos: 1
