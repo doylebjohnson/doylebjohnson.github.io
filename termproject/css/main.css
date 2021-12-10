@@ -167,10 +167,9 @@ bottom of page to top navigation */
     }
 
     img.patent {
-        height: 100px;
-        width: 70px;
+
         position:fixed;
-        top: 50px;
+        top: 100px;
     }
   }
 
