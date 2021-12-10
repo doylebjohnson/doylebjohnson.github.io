@@ -2,10 +2,10 @@ window.onload = function() {
 
     let headshot = document.getElementById("headshot");
     headshot.addEventListener("mouseover", function() {
-        enlargeImg("this");
+        enlargeImg("headshot");
     }, false);
     headshot.addEventListener("mouseout", function() {
-        standardImg("this");
+        standardImg("headshot");
     }, false);
 
     let alcatraz = document.getElementById("alcatraz");
