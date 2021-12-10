@@ -78,8 +78,8 @@ To run:
 - Final counts:
 
   - Files:
-    - html: 8
-    - javascript: 8
+    - html: 9
+    - javascript: 9
     - css: 1
     - images: 86
     - audio files: 6
