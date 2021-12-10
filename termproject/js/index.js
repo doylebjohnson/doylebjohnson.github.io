@@ -1,18 +1,3 @@
-window.onload = function() {
-
-    let headshot = document.getElementById("headshot");
-    headshot.addEventListener("mouseover", function() {
-        enlargeImg("images/DoyleBJohnson.jpg");
-    }, false);
-    headshot.addEventListener("mouseout", function() {
-        standardImg("images/DoyleBJohnson.jpg");
-    }, false);
-
-    let alcatraz = document.getElementById("alcatraz");
-    alcatraz.addEventListener("mouseover", newImg, false);
-    alcatraz.addEventListener("mouseout", originalImg, false);
-}
-
 function enlargeImg(target) {
     target.style.height = "418px";
     target.style.width = "372px"
