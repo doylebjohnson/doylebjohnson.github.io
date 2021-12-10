@@ -52,6 +52,7 @@ To run:
 - Added javascript to every page
 - Added Vue to hobbies.html/hobbies.js, nowthen.html/nowthen.js pages
 - Changed default background to blue, and change to white for narrow screens
+- All CSS written by hand; images and video auto sized using "object-fit: cover"; screen narrowing handled by @media query for screen size
 - Specific javascript additions:
 
   - index - resize and change image using mouseover
