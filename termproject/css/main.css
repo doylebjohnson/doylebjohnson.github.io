@@ -140,12 +140,12 @@ table img {
 
   img.patent {
     display: block; 
-    height:600px; 
-    width:420px; 
+    height:550px; 
+    width:385px; 
     margin-left: auto; 
     margin-right: auto; 
     position: fixed; 
-    top:50px; 
+    top:100px; 
     right:0px;
   }
 
