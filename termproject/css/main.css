@@ -145,7 +145,7 @@ table img {
     margin-left: auto; 
     margin-right: auto; 
     position: fixed; 
-    top:0px; 
+    top:100px; 
     right:0px;
   }
 
@@ -164,12 +164,6 @@ bottom of page to top navigation */
 
     .narrowscreen {
         display: contents;
-    }
-
-    img.patent {
-
-        position:fixed;
-        top: 100px;
     }
   }
 
