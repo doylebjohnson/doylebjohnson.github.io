@@ -16,7 +16,7 @@ function enlargeImg() {
 
 function standardImg() {
     let standard = document.getElementById("headshot");
-    standard.src = "images/DoyleBJohnson0.jpg";
+    standard.src = "images/DoyleBJohnsonSmall.jpg";
 }
 
 function newImg() {
