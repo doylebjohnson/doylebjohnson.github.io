@@ -146,7 +146,7 @@ table img {
     margin-right: auto; 
     position: fixed; 
     top:0px; 
-    right:0px
+    right:0px;
   }
 
 /* For narrow screen: change background color, 
@@ -164,6 +164,13 @@ bottom of page to top navigation */
 
     .narrowscreen {
         display: contents;
+    }
+
+    img.patent {
+        height: 100px;
+        width: 70px;
+        position:fixed;
+        top: 50px;
     }
   }
 
